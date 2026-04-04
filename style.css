@@ -59,7 +59,15 @@ input {
 .sidebar {
     grid-row: 1 / 4;
 
+    padding: 1rem 2rem;
+
     border: 1px solid red;
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /* Main section */
