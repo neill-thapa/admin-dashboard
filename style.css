@@ -60,13 +60,18 @@ input {
     grid-row: 1 / 4;
 
     padding: 1rem 2rem;
-
     border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+a {
     text-decoration: none;
 }
 
