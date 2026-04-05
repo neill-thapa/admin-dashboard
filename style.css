@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+:root {
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+}
+
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 20px;
 
-    padding: 1rem;
+    padding: var(--space-md);
 }
 
 /* Header section */
@@ -18,11 +24,11 @@ header {
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-lg);
 
     border: 1px solid red;
 
-    padding: 1rem 2rem;
+    padding: var(--space-md) var(--space-lg);
 }
 .header-top,
 .header-bottom {
@@ -31,13 +37,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
+    gap: var(--space-lg);
 }
 .user-menu,
 .header-bottom > .user-info {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 .header-top > .search {
     flex: 1;
@@ -45,7 +51,7 @@ header {
 
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 input {
     padding: 0.8rem;
@@ -54,7 +60,7 @@ input {
     border-radius: 15px;
 }
 .actions button {
-    padding: 0.5rem 0.8rem;
+    padding: var(--space-sm) 0.8rem;
 }
 
 /* Sidebar section */
@@ -66,12 +72,12 @@ input {
 
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: var(--space-lg);
 }
 .sidebar-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 ul {
     padding: 0;
@@ -86,36 +92,36 @@ a {
 .trending-users .user-profile {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 
 /* Main section */
 main {
     grid-row: 2 / 4;
 
-    padding: 1rem 2rem;
+    padding: var(--space-md) var(--space-lg);
     border: 1px solid red;
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-lg);
 }
 main .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: var(--space-md);
 }
 .card {
     border: 1px solid red;
 
-    padding: 0.5rem 1rem;
+    padding: var(--space-sm) var(--space-md);
 }
 .cards .card-icons {
-    margin-top: 2rem;
+    margin-top: var(--space-lg);
     
     display: flex;
     justify-content: end;
-    gap: 0.5rem;
+    gap: var(--space-sm);
 }
 
 /* Aside card section */
@@ -124,37 +130,37 @@ main .cards {
     grid-row: 2 / 4;
     grid-column: 3 / 4;
 
-    padding: 1rem 0;
+    padding: var(--space-md) 0;
     border: 1px solid red;
 
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: var(--space-lg);
 }
 .aside-card {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
 }
 .announcement-list {
     border: 1px solid red;
 
-    padding: 0.5rem 1rem;
+    padding: var(--space-sm) var(--space-md);
 }
 .trending-users {
     border: 1px solid red;
-    padding: 0.5rem 1rem;
+    padding: var(--space-sm) var(--space-md);
 }
 .announcement-item {
-    margin-bottom: 1rem;
+    margin-bottom: var(--space-md);
 }
 .announcement-item p { 
-    padding-bottom: 0.5rem;
+    padding-bottom: var(--space-sm);
 }
 
 /* trending users cards */
 .trending-users {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--space-md);
 }
