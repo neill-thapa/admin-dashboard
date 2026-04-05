@@ -158,6 +158,3 @@ main .cards {
     flex-direction: column;
     gap: 1rem;
 }
-{
-    display: flex;
-}
